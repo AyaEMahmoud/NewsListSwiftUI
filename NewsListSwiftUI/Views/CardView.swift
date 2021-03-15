@@ -51,9 +51,9 @@ struct CardView: View {
     }
 }
 
-struct CardView_Previews: PreviewProvider {
-    static var previews: some View {
-        let article: Article
-        CardView(article: article)
-    }
-}
+//struct CardView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        let article: Article
+//        CardView(article: article)
+//    }
+//}

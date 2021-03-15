@@ -56,6 +56,8 @@
 		E0574D2025FF60120024D468 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E0574D1D25FF5FB10024D468 /* ContentDataSource.swift */,
+				E08FF09825F6AB0C006D0473 /* NewsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -68,6 +70,15 @@
 				E010304025F8C18400769E05 /* CardView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E0574D2525FF73590024D468 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E06D868025F66E9400AA3ED1 /* RoundedCorners.swift */,
+				E065049025F74A3500D5A185 /* ImageLoader.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		E06D865C25F6297B00AA3ED1 = {
@@ -89,6 +100,7 @@
 		E06D866725F6297B00AA3ED1 /* NewsListSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				E0574D2525FF73590024D468 /* Helpers */,
 				E0574D2325FF70700024D468 /* Views */,
 				E0574D2025FF60120024D468 /* Model */,
 				E06D866825F6297B00AA3ED1 /* AppDelegate.swift */,
@@ -97,10 +109,6 @@
 				E06D867325F6297D00AA3ED1 /* LaunchScreen.storyboard */,
 				E06D867625F6297D00AA3ED1 /* Info.plist */,
 				E06D867025F6297D00AA3ED1 /* Preview Content */,
-				E06D868025F66E9400AA3ED1 /* RoundedCorners.swift */,
-				E065049025F74A3500D5A185 /* ImageLoader.swift */,
-				E08FF09825F6AB0C006D0473 /* NewsModel.swift */,
-				E0574D1D25FF5FB10024D468 /* ContentDataSource.swift */,
 			);
 			path = NewsListSwiftUI;
 			sourceTree = "<group>";
