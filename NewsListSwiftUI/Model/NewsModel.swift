@@ -18,7 +18,7 @@ struct Response: Codable {
 // MARK: - Article
 struct Article: Codable {
     let source: Source
-    let author, title, articleDescription: String
+    var author, title, articleDescription: String
     let url: String
     let urlToImage: String
     let publishedAt: String

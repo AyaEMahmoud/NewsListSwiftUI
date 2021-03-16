@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct NewsDetails: View {
     @State var article: Article
@@ -14,10 +15,12 @@ struct NewsDetails: View {
         ScrollView {
             VStack (alignment: .leading) {
                 
-                RemoteImage(url: article.urlToImage)
+                KFImage(URL(string: article.urlToImage)!)
                     .frame(width: UIScreen.main.bounds.width, height: 350, alignment: .top)
+
+//                RemoteImage(url: article.urlToImage)
+//                    .frame(width: UIScreen.main.bounds.width, height: 350, alignment: .top)
                     
-                
                 Text(article.title)
                     .font(.headline)
                     .fontWeight(.bold)

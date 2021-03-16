@@ -13,6 +13,7 @@
 		E065049525F74F6F00D5A185 /* SwiftUIRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = E065049425F74F6F00D5A185 /* SwiftUIRefresh */; };
 		E065049925F7533100D5A185 /* SwiftUIPullToRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = E065049825F7533100D5A185 /* SwiftUIPullToRefresh */; };
 		E065049C25F7768400D5A185 /* NewsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065049B25F7768400D5A185 /* NewsDetails.swift */; };
+		E06B51EF26004602007FFA7D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E06B51EE26004602007FFA7D /* Kingfisher */; };
 		E06D866925F6297B00AA3ED1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D866825F6297B00AA3ED1 /* AppDelegate.swift */; };
 		E06D866B25F6297B00AA3ED1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D866A25F6297B00AA3ED1 /* SceneDelegate.swift */; };
 		E06D866D25F6297B00AA3ED1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D866C25F6297B00AA3ED1 /* ContentView.swift */; };
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E06B51EF26004602007FFA7D /* Kingfisher in Frameworks */,
 				E065049925F7533100D5A185 /* SwiftUIPullToRefresh in Frameworks */,
 				E065049525F74F6F00D5A185 /* SwiftUIRefresh in Frameworks */,
 			);
@@ -140,6 +142,7 @@
 			packageProductDependencies = (
 				E065049425F74F6F00D5A185 /* SwiftUIRefresh */,
 				E065049825F7533100D5A185 /* SwiftUIPullToRefresh */,
+				E06B51EE26004602007FFA7D /* Kingfisher */,
 			);
 			productName = NewsListSwiftUI;
 			productReference = E06D866525F6297B00AA3ED1 /* NewsListSwiftUI.app */;
@@ -171,6 +174,7 @@
 			packageReferences = (
 				E065049325F74F6F00D5A185 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */,
 				E065049725F7533100D5A185 /* XCRemoteSwiftPackageReference "SwiftUI-PullToRefresh" */,
+				E06B51ED26004602007FFA7D /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = E06D866625F6297B00AA3ED1 /* Products */;
 			projectDirPath = "";
@@ -423,6 +427,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		E06B51ED26004602007FFA7D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -435,6 +447,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E065049725F7533100D5A185 /* XCRemoteSwiftPackageReference "SwiftUI-PullToRefresh" */;
 			productName = SwiftUIPullToRefresh;
+		};
+		E06B51EE26004602007FFA7D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E06B51ED26004602007FFA7D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

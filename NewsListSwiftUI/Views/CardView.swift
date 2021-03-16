@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct CardView: View {
     
@@ -20,9 +21,13 @@ struct CardView: View {
                 .shadow(radius: 9)
                 .foregroundColor(.white)
             
-            RemoteImage(url: article.urlToImage)
+            KFImage(URL(string: article.urlToImage)!)
                 .frame(width: UIScreen.main.bounds.width - 50, height: 200, alignment: .top)
                 .cornerRadius(16, corners: [.topLeft, .topRight])
+            
+//            RemoteImage(url: article.urlToImage)
+//                .frame(width: UIScreen.main.bounds.width - 50, height: 200, alignment: .top)
+//                .cornerRadius(16, corners: [.topLeft, .topRight])
             
             VStack(alignment: .leading, spacing: 10) {
                 
@@ -46,14 +51,12 @@ struct CardView: View {
             }.offset(y: 200)
             .padding(.horizontal, 40.0)
         }
-
-        
     }
 }
 
 //struct CardView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        let article: Article
+//        let article: Article = Article(from: <#Decoder#>, title: "", articleDescription: "", author: "")
 //        CardView(article: article)
 //    }
 //}
